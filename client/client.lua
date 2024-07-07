@@ -483,9 +483,16 @@ RegisterNetEvent('rex-gunsmith:client:rentgunsmith', function(gunsmithid, name)
         return
     end
 
+    RSGCore.Functions.TriggerCallback('rsg-multijob:server:checkjobs', function(canbuy)
+        if not canbuy then
+            lib.notify({ title = Lang:t('client.lang_50'), type = 'error', duration = 7000 })
+            return
+        end
+    end)
+
     RSGCore.Functions.TriggerCallback('rex-gunsmith:server:countowned', function(result)
     
-        if result >= Config.MaxBalacksmiths then
+        if result >= Config.MaxGunsmiths then
             lib.notify({ title = Lang:t('client.lang_48'), description = Lang:t('client.lang_49'), type = 'error', duration = 7000 })
             return
         end

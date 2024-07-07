@@ -12,7 +12,7 @@ Config.LicenseRequired = false
 ---------------------------------
 -- rent settings
 ---------------------------------
-Config.MaxWeaponsmith     = 1
+Config.MaxGunsmiths       = 1
 Config.RentStartup        = 100
 Config.RentPerHour        = 1
 Config.WeaponsmithCronJob = '0 * * * *' -- cronjob runs every hour (0 * * * *)
@@ -110,8 +110,17 @@ Config.GunsmithCrafting = {
         ingredients = {
             [1] = { item = 'coal', amount = 1 },
             [2] = { item = 'steelbar', amount = 1 },
+            [3] = { item = 'wood', amount = 1 },
         },
-        receive = 'revolverbarrel',
+        receive = 'revolverparts',
+        giveamount = 1
+    },
+    {   category = 'Revolvers',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'revolverparts', amount = 1 },
+        },
+        receive = 'weapon_revolver_cattleman',
         giveamount = 1
     },
 
