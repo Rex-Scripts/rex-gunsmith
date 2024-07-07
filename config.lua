@@ -105,14 +105,12 @@ Config.GunsmithLocations = {
 ---------------------------------
 Config.GunsmithCrafting = {
 
-    {   category = 'Parts',
+    {   category = 'Revolvers',
         crafttime = 30000,
         ingredients = {
-            [1] = { item = 'coal', amount = 1 },
-            [2] = { item = 'steelbar', amount = 1 },
-            [3] = { item = 'wood', amount = 1 },
+            [1] = { item = 'revolverparts', amount = 1 },
         },
-        receive = 'revolverparts',
+        receive = 'weapon_revolver_cattleman',
         giveamount = 1
     },
     {   category = 'Revolvers',
@@ -120,7 +118,223 @@ Config.GunsmithCrafting = {
         ingredients = {
             [1] = { item = 'revolverparts', amount = 1 },
         },
-        receive = 'weapon_revolver_cattleman',
+        receive = 'weapon_revolver_cattleman_mexican',
+        giveamount = 1
+    },
+    {   category = 'Revolvers',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'revolverparts', amount = 1 },
+        },
+        receive = 'weapon_revolver_doubleaction',
+        giveamount = 1
+    },
+    {   category = 'Revolvers',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'revolverparts', amount = 1 },
+        },
+        receive = 'weapon_revolver_doubleaction_gambler',
+        giveamount = 1
+    },
+    {   category = 'Revolvers',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'revolverparts', amount = 1 },
+        },
+        receive = 'weapon_revolver_schofield',
+        giveamount = 1
+    },
+    {   category = 'Revolvers',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'revolverparts', amount = 1 },
+        },
+        receive = 'weapon_revolver_lemat',
+        giveamount = 1
+    },
+    {   category = 'Revolvers',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'revolverparts', amount = 1 },
+        },
+        receive = 'weapon_revolver_navy',
+        giveamount = 1
+    },
+    {   category = 'Revolvers',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'revolverparts', amount = 1 },
+        },
+        receive = 'weapon_revolver_navy_crossover',
+        giveamount = 1
+    },
+    {   category = 'Pistols',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'pistolparts', amount = 1 },
+        },
+        receive = 'weapon_pistol_volcanic',
+        giveamount = 1
+    },
+    {   category = 'Pistols',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'pistolparts', amount = 1 },
+        },
+        receive = 'weapon_pistol_m1899',
+        giveamount = 1
+    },
+    {   category = 'Pistols',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'pistolparts', amount = 1 },
+        },
+        receive = 'weapon_pistol_mauser',
+        giveamount = 1
+    },
+    {   category = 'Pistols',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'pistolparts', amount = 1 },
+        },
+        receive = 'weapon_pistol_semiauto',
+        giveamount = 1
+    },
+    {   category = 'Repeater',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'repeaterparts', amount = 1 },
+        },
+        receive = 'weapon_repeater_carbine',
+        giveamount = 1
+    },
+    {   category = 'Repeater',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'repeaterparts', amount = 1 },
+        },
+        receive = 'weapon_repeater_winchester',
+        giveamount = 1
+    },
+    {   category = 'Repeater',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'repeaterparts', amount = 1 },
+        },
+        receive = 'weapon_repeater_henry',
+        giveamount = 1
+    },
+    {   category = 'Repeater',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'repeaterparts', amount = 1 },
+        },
+        receive = 'weapon_repeater_evans',
+        giveamount = 1
+    },
+    {   category = 'Rifle',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'rifleparts', amount = 1 },
+        },
+        receive = 'weapon_rifle_varmint',
+        giveamount = 1
+    },
+    {   category = 'Rifle',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'rifleparts', amount = 1 },
+        },
+        receive = 'weapon_rifle_springfield',
+        giveamount = 1
+    },
+    {   category = 'Rifle',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'rifleparts', amount = 1 },
+        },
+        receive = 'weapon_rifle_boltaction',
+        giveamount = 1
+    },
+    {   category = 'Rifle',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'rifleparts', amount = 1 },
+        },
+        receive = 'weapon_rifle_elephant',
+        giveamount = 1
+    },
+    {   category = 'Sniper Rifle',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'rifleparts', amount = 1 },
+        },
+        receive = 'weapon_sniperrifle_rollingblock',
+        giveamount = 1
+    },
+    {   category = 'Sniper Rifle',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'rifleparts', amount = 1 },
+        },
+        receive = 'weapon_sniperrifle_rollingblock_exotic',
+        giveamount = 1
+    },
+    {   category = 'Sniper Rifle',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'rifleparts', amount = 1 },
+        },
+        receive = 'weapon_sniperrifle_carcano',
+        giveamount = 1
+    },
+    {   category = 'Shotgun',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'shotgunparts', amount = 1 },
+        },
+        receive = 'weapon_shotgun_doublebarrel',
+        giveamount = 1
+    },
+    {   category = 'Shotgun',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'shotgunparts', amount = 1 },
+        },
+        receive = 'weapon_shotgun_doublebarrel_exotic',
+        giveamount = 1
+    },
+    {   category = 'Shotgun',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'shotgunparts', amount = 1 },
+        },
+        receive = 'weapon_shotgun_sawedoff',
+        giveamount = 1
+    },
+    {   category = 'Shotgun',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'shotgunparts', amount = 1 },
+        },
+        receive = 'weapon_shotgun_semiauto',
+        giveamount = 1
+    },
+    {   category = 'Shotgun',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'shotgunparts', amount = 1 },
+        },
+        receive = 'weapon_shotgun_pump',
+        giveamount = 1
+    },
+    {   category = 'Shotgun',
+        crafttime = 30000,
+        ingredients = {
+            [1] = { item = 'shotgunparts', amount = 1 },
+        },
+        receive = 'weapon_shotgun_repeating',
         giveamount = 1
     },
 
