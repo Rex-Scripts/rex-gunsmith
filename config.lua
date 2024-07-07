@@ -15,7 +15,7 @@ Config.LicenseRequired = false
 Config.MaxGunsmiths       = 1
 Config.RentStartup        = 100
 Config.RentPerHour        = 1
-Config.WeaponsmithCronJob = '0 * * * *' -- cronjob runs every hour (0 * * * *)
+Config.GunsmithCronJob    = '0 * * * *' -- cronjob runs every hour (0 * * * *)
 Config.MaxRent            = 100
 
 ---------------------------------
