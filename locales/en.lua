@@ -48,8 +48,8 @@ local Translations = {
         lang_45 = 'Crafing options for ',
         lang_46 = 'Crafting ',
         lang_47 = 'Open Gunsmith',
-        lang_48 = 'Max Sallons Reached!',
-        lang_49 = 'you have reached the maximum sallos you can rent.',
+        lang_48 = 'Max Gunsmiths Reached!',
+        lang_49 = 'you have reached the maximum gunsmiths you can rent.',
         lang_50 = 'You have too many jobs already!',
     },
 
