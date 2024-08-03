@@ -487,31 +487,30 @@ RegisterNetEvent('rex-gunsmith:client:rentgunsmith', function(gunsmithid, name)
         if not canbuy then
             lib.notify({ title = Lang:t('client.lang_50'), type = 'error', duration = 7000 })
             return
-        end
-    end)
-
-    RSGCore.Functions.TriggerCallback('rex-gunsmith:server:countowned', function(result)
-    
-        if result >= Config.MaxGunsmiths then
-            lib.notify({ title = Lang:t('client.lang_48'), description = Lang:t('client.lang_49'), type = 'error', duration = 7000 })
-            return
-        end
-
-        -- check player has a licence
-        if Config.LicenseRequired then
-            local hasItem = RSGCore.Functions.HasItem('gunsmithlicence', 1)
-
-            if hasItem then
-                TriggerServerEvent('rex-gunsmith:server:rentgunsmith', gunsmithid)
-            else
-                lib.notify({ title = Lang:t('client.lang_37'), type = 'error', duration = 7000 })
-            end
         else
-            TriggerServerEvent('rex-gunsmith:server:rentgunsmith', gunsmithid)
-        end
+            RSGCore.Functions.TriggerCallback('rex-gunsmith:server:countowned', function(result)
+            
+                if result >= Config.MaxGunsmiths then
+                    lib.notify({ title = Lang:t('client.lang_48'), description = Lang:t('client.lang_49'), type = 'error', duration = 7000 })
+                    return
+                end
         
+                -- check player has a licence
+                if Config.LicenseRequired then
+                    local hasItem = RSGCore.Functions.HasItem('gunsmithlicence', 1)
+        
+                    if hasItem then
+                        TriggerServerEvent('rex-gunsmith:server:rentgunsmith', gunsmithid)
+                    else
+                        lib.notify({ title = Lang:t('client.lang_37'), type = 'error', duration = 7000 })
+                    end
+                else
+                    TriggerServerEvent('rex-gunsmith:server:rentgunsmith', gunsmithid)
+                end
+                
+            end)
+        end
     end)
-
 end)
 
 -------------------------------------------------------------------------------------------
